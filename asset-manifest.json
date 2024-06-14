@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/house-rent-calculator/static/css/main.d837780d.css",
+    "main.js": "/house-rent-calculator/static/js/main.6f97e1f5.js",
+    "index.html": "/house-rent-calculator/index.html",
+    "main.d837780d.css.map": "/house-rent-calculator/static/css/main.d837780d.css.map",
+    "main.6f97e1f5.js.map": "/house-rent-calculator/static/js/main.6f97e1f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d837780d.css",
+    "static/js/main.6f97e1f5.js"
+  ]
+}
