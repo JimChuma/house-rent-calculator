@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import AmountCalc from "./components/AmountCalc";
+import Select from "./components/Select";
 
 function App() {
+  const [select, setSelect] = useState(2);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="full-container">
+      <div className="box-width">
+        <div className="content">
+          <div className="app">
+          <h2 className="app-title">House Rent Calculator</h2>
+            <Select select={select} setSelect={setSelect} />
+            {select === 2 ? (
+              <AmountCalc select={select} setSelect={setSelect} />
+            ) : null}
+            {select === 0 ? (
+              <AmountCalc select={select} setSelect={setSelect} />
+            ) : null}
+            {select === 1 ? (
+              <AmountCalc select={select} setSelect={setSelect} />
+            ) : null}
+          </div>
+        </div>
+      </div>
+    </main>
   );
 }
 
